@@ -11,17 +11,13 @@ public class PC {
         this.motherboard = motherboard;
     }
 
-    public Case getTheCase() {
-        return theCase;
+    public void powerUp() {
+        theCase.pressPowerButton();
+        drawLogo();
     }
 
-    public Monitor getMonitor() {
-        return monitor;
+    private void drawLogo(){
+        /* Fancy logo */
+        monitor.drawPixelAt(230, 140, "Green");
     }
-
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
-
-
 }
