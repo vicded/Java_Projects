@@ -8,9 +8,7 @@ public class Main {
         Motherboard theMotherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
 
         PC thePc = new PC(theCase, theMonitor, theMotherboard);
-        thePc.getTheCase().pressPowerButton();
-        thePc.getMonitor().drawPixelAt(200, 300, "red");
-        thePc.getMotherboard().loadProgram("Visual Studio Code");
+        thePc.powerUp();
 
     }
 }
